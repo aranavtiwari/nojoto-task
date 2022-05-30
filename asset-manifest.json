@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nojoto-task/static/css/main.bb871413.css",
+    "main.js": "/nojoto-task/static/js/main.9e766bd1.js",
+    "index.html": "/nojoto-task/index.html",
+    "main.bb871413.css.map": "/nojoto-task/static/css/main.bb871413.css.map",
+    "main.9e766bd1.js.map": "/nojoto-task/static/js/main.9e766bd1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb871413.css",
+    "static/js/main.9e766bd1.js"
+  ]
+}
