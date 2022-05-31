@@ -100,8 +100,10 @@ cursor: pointer;
   }
 
   .edit{
-      width: 100px !important;
+      width: 120px !important;
     height: 30px;
+    border-left: 2px solid rgba(128, 128, 128, 0.51);
+    border-right: 2px solid rgba(128, 128, 128, 0.51);
   }
   .edit:hover{
     color: rgb(5, 116, 144);
