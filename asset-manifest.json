@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/nojoto-task/static/css/main.445b1b82.css",
+    "main.css": "/nojoto-task/static/css/main.59dfd027.css",
     "main.js": "/nojoto-task/static/js/main.ffe03d77.js",
     "index.html": "/nojoto-task/index.html",
-    "main.445b1b82.css.map": "/nojoto-task/static/css/main.445b1b82.css.map",
+    "main.59dfd027.css.map": "/nojoto-task/static/css/main.59dfd027.css.map",
     "main.ffe03d77.js.map": "/nojoto-task/static/js/main.ffe03d77.js.map"
   },
   "entrypoints": [
-    "static/css/main.445b1b82.css",
+    "static/css/main.59dfd027.css",
     "static/js/main.ffe03d77.js"
   ]
 }
