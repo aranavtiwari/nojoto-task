@@ -5,6 +5,8 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
 
 import {AiFillHeart,AiTwotoneEdit,AiOutlineClose,AiFillDelete,AiOutlineMail,AiOutlinePhone} from "react-icons/ai";
 import {BsGlobe} from "react-icons/bs";
@@ -17,6 +19,16 @@ const User = (para) => {
     const [email, setEmail] = useState(para.email)
     const [website, setWebsite] = useState(para.website)
     
+    const useStyles = makeStyles((theme) => ({
+        root: {
+          '& > *': {
+            margin: theme.spacing(1),
+            width: '25ch',
+          },
+        },
+      }));
+
+
 
     const likef = () => {
         return setLike(!like)
@@ -102,11 +114,18 @@ const User = (para) => {
                                 <DialogTitle id="alert-dialog-title">{"Edit User Info"}</DialogTitle>
                                 <DialogContent>
                                     <DialogContentText className="user-info" id="alert-dialog-description">
+                                    <form className={useStyles()} noValidate autoComplete="off">
+                                        <TextField className="lab" id="outlined-basic" label="Name" variant="outlined" defaultValue={para.name} onChange={handleChangeName} />
+                                        <TextField className="lab" id="outlined-basic" label="Email" variant="outlined" type="email" defaultValue={para.email} onChange={handleChangeEmail} />
+                                        <TextField className="lab" id="outlined-basic" label="Phone" variant="outlined" defaultValue={para.phone} onChange={handleChangePhone}  />
+                                        <TextField className="lab" id="outlined-basic" label="Website" variant="outlined"  defaultValue={para.website} onChange={handleChangeWebsite} />
                                         
-                                            <label className="lab">
+                                    </form>
+                                        
+                                            {/* <label className="lab">
                                                 Name: &nbsp; &nbsp;&nbsp;<input  t type="text" defaultValue={para.name} onChange={handleChangeName}/>
-                                            </label>
-                                            <label className="lab">
+                                            </label> */}
+                                            {/* <label className="lab">
                                                 Email: &nbsp; &nbsp;&nbsp;<input type="email" defaultValue={para.email} onChange={handleChangeEmail} />
                                             </label>
 
@@ -116,7 +135,7 @@ const User = (para) => {
                                             
                                             <lable className="lab labi">
                                                 Website: &nbsp; <input type="text" defaultValue={para.website} onChange={handleChangeWebsite} />
-                                            </lable>
+                                            </lable> */}
                                         
                                         
                                     </DialogContentText>

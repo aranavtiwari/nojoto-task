@@ -1,11 +1,13 @@
 import React,{useState, useEffect} from "react";
 import axios from "axios";
 import User from './User'
+import DarkModeToggle from "react-dark-mode-toggle";
 
 const App = () => {
     const [state, setState] = useState([])
-    const [likeval, setLike] = useState(false)
+    const [isDarkMode, setIsDarkMode] = useState(() => false);
 
+    // Fetching data from API and stroing in state
     useEffect(() => {
         const repo = async () => {
             const res = await axios('https://jsonplaceholder.typicode.com/users');
@@ -31,6 +33,7 @@ const App = () => {
         
     }
     return (
+        
         <div className="container">
                 <div className="cards">
                     { state.map((user,index) => {
