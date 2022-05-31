@@ -122,21 +122,6 @@ const User = (para) => {
                                         
                                     </form>
                                         
-                                            {/* <label className="lab">
-                                                Name: &nbsp; &nbsp;&nbsp;<input  t type="text" defaultValue={para.name} onChange={handleChangeName}/>
-                                            </label> */}
-                                            {/* <label className="lab">
-                                                Email: &nbsp; &nbsp;&nbsp;<input type="email" defaultValue={para.email} onChange={handleChangeEmail} />
-                                            </label>
-
-                                            <label className="lab labp">
-                                                Phone: &nbsp;&nbsp; <input type='text' defaultValue={para.phone} onChange={handleChangePhone} />
-                                            </label>
-                                            
-                                            <lable className="lab labi">
-                                                Website: &nbsp; <input type="text" defaultValue={para.website} onChange={handleChangeWebsite} />
-                                            </lable> */}
-                                        
                                         
                                     </DialogContentText>
                                 </DialogContent>
